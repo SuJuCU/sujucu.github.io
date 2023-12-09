@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>需求分析规格说明文档 | 摸凹猫的博客</title><meta name="author" content="摸凹猫"><meta name="copyright" content="摸凹猫"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="以下为专业英语P38的翻译  需求规格说明书  &lt;项目名称&gt;  &lt;版本&gt;  &lt;作者&gt;    指导: 日期      校订版本    日期 保密级别 作者 评论                **批准文件    签字 打印的名字 头衔 日期                [TOC] 1.  介绍软件需求规范（ SRS ）文档的介绍应该提供完整 SRS 文档的概述。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="需求分析规格说明文档">
+<meta property="og:url" content="https://sujucu.github.io/2023/12/09/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/index.html">
+<meta property="og:site_name" content="摸凹猫的博客">
+<meta property="og:description" content="以下为专业英语P38的翻译  需求规格说明书  &lt;项目名称&gt;  &lt;版本&gt;  &lt;作者&gt;    指导: 日期      校订版本    日期 保密级别 作者 评论                **批准文件    签字 打印的名字 头衔 日期                [TOC] 1.  介绍软件需求规范（ SRS ）文档的介绍应该提供完整 SRS 文档的概述。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tse4-mm.cn.bing.net/th/id/OIP-C.SSmOBS2-3G7Ka06fYK0I8QAAAA?w=144&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+<meta property="article:published_time" content="2023-12-08T23:05:14.000Z">
+<meta property="article:modified_time" content="2023-12-08T23:59:56.515Z">
+<meta property="article:author" content="摸凹猫">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tse4-mm.cn.bing.net/th/id/OIP-C.SSmOBS2-3G7Ka06fYK0I8QAAAA?w=144&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://sujucu.github.io/2023/12/09/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '需求分析规格说明文档',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-12-09 07:59:56'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.SSmOBS2-3G7Ka06fYK0I8QAAAA?w=144&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.3&amp;pid=1.7" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: pink"><nav id="nav"><span id="blog-info"><a href="/" title="摸凹猫的博客"><span class="site-name">摸凹猫的博客</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">需求分析规格说明文档</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-12-08T23:05:14.000Z" title="发表于 2023-12-09 07:05:14">2023-12-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-08T23:59:56.515Z" title="更新于 2023-12-09 07:59:56">2023-12-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%B8%93%E4%B8%9A%E8%8B%B1%E8%AF%AD%E4%BD%9C%E4%B8%9A/">专业英语作业</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="需求分析规格说明文档"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>以下为专业英语P38的翻译</p>
+<hr>
+<div style="text-align:center; font-size:30px;">需求规格说明书</div>
+
+<div style="text-align:center; font-size:24px;">&lt;项目名称&gt;</div>
+
+<div style="text-align:center; font-size:24px;">&lt;版本&gt;</div>
+
+<div style="text-align:center; font-size:24px;">&lt;作者&gt;</div>
+
+
+
+<div style="text-align:center; font-size:24px;">指导:</div>
+<div style="text-align:center; font-size:24px;">日期</div>
+
+
+
+
+
+<p><strong>校订版本</strong></p>
+<table>
+<thead>
+<tr>
+<th>日期</th>
+<th>保密级别</th>
+<th>作者</th>
+<th>评论</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>**批准文件</p>
+<table>
+<thead>
+<tr>
+<th><strong>签字</strong></th>
+<th>打印的名字</th>
+<th>头衔</th>
+<th>日期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>[TOC]</p>
+<h1 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.  介绍"></a>1.  介绍</h1><p>软件需求规范（ SRS ）文档的介绍应该提供完整 SRS 文档的概述。在编写本文档时记住本文档应包含软件工程师充分设计和实现本文档中列出的需求所描述的软件产品所需的所有信息（注意，以下小节注释主要取自 IEEE SRS 指南）。</p>
+<h2 id="1-1-编写目的"><a href="#1-1-编写目的" class="headerlink" title="1.1.  编写目的"></a>1.1.  编写目的</h2><p>本 SRS 的目的是什么？它的（预期）读者是什么？</p>
+<h2 id="1-2-文档范围"><a href="#1-2-文档范围" class="headerlink" title="1.2.  文档范围"></a>1.2.  文档范围</h2><p>本小节应：</p>
+<p>（1）确定拟生产的软件产品的名称；例如，主机 DBMS ，报表生成器等。<br>（2）解释软件产品将做什么，如果有必要，将不做什么。<br>（3）说明指定软件的用途。作为其中的一部分，它应该：<br>    （a）尽可能准确地描述所有相关的利益、目的和目标。例如，目标之一是提供有效的报告功能，还有参数驱动的、用户可定义的、周期为2小时的报告和用户参数的在线输入。<br>    （b）与高层规范（例如，系统需求规范）中的类似陈述保持一致，如果存在的话。这个软件产品的范围是什么？</p>
+<h2 id="1-3-术语与缩写解释"><a href="#1-3-术语与缩写解释" class="headerlink" title="1.3.  术语与缩写解释"></a>1.3.  术语与缩写解释</h2><p>本小节应提供正确解释 SRS 所需的所有术语、首字母缩略词和缩写的定义。这些信息可以通过参考 srs 中的一个或多个附录或参考其他文件来提供。</p>
+<h2 id="1-4-参考资料"><a href="#1-4-参考资料" class="headerlink" title="1.4.  参考资料"></a>1.4.  参考资料</h2><p>本小节应：<br>(1）提供 SRS 中其他地方引用的所有文件的完整列表一个单独的、指定的文档。<br>(2）通过标题、报告号（如果适用日期）和出版机构来识别每个文件。<br>(3）指明可获得参考资料的来源。<br>这些信息可以通过参考附录或其他文件来提供。</p>
+<h2 id="1-5-概述"><a href="#1-5-概述" class="headerlink" title="1.5.  概述"></a>1.5.  概述</h2><p>这一小节应该<br>(1）描述 SRS 的其余部分包含的内容。<br>(2）解释 SRS 是如何组织的。</p>
+<h1 id="2-概要"><a href="#2-概要" class="headerlink" title="2. 概要"></a>2. 概要</h1><p> SRS 的这一部分应描述影响产品及其要求的一般因素。应该明确的是，本节没有规定具体的要求；这只会使这些要求更容易理解。</p>
+<h2 id="2-1-产品视角"><a href="#2-1-产品视角" class="headerlink" title="2.1.  产品视角"></a>2.1.  产品视角</h2><p> SRS 的这一部分将产品与其他相关产品或项目放在一起（参见 IEEE SRS 指南了解更多细节）。</p>
+<h2 id="2-2-产品功能"><a href="#2-2-产品功能" class="headerlink" title="2.2.  产品功能"></a>2.2.  产品功能</h2><p>SRS 的这一部分应该提供软件将要执行的功能的摘要。</p>
+<h2 id="2-3-用户特征"><a href="#2-3-用户特征" class="headerlink" title="2.3.  用户特征"></a>2.3.  用户特征</h2><p> SRS 的这一部分应该描述影响特定需求的产品最终用户的一般特征（详见 IEEE SRS 指南）。</p>
+<h2 id="2-4-一般约束"><a href="#2-4-一般约束" class="headerlink" title="2.4.  一般约束"></a>2.4.  一般约束</h2><p>SRS 的这一部分应该提供限制开发人员设计系统选择的任何其他项目的一般描述（参见 IEEE SRS 指南，以获得可能的一般约束的部分列表）</p>
+<h2 id="2-5-假设与依赖"><a href="#2-5-假设与依赖" class="headerlink" title="2.5.  假设与依赖"></a>2.5.  假设与依赖</h2><p>SRS 的这一部分应列出影响 SRS 中所述要求的每个因素。这些因素不是软件的设计约束，而是对它们的任何更改都会影响 SRS 中的需求。例如，可以假设在为软件产品指定的硬件上可以使用特定的操作系统。实际上，如果操作系统不可用，那么 SRS 将不得不进行相应的更改。</p>
+<h1 id="3-具体要求"><a href="#3-具体要求" class="headerlink" title="3.  具体要求"></a>3.  具体要求</h1><p>这将是 SRS 中最大和最重要的部分。客户需求将体现在第2部分中，但是这一部分将给出用于指导项目软件设计、实现和测试的需求。</p>
+<p>本节中的每个要求应该是：</p>
+<ul>
+<li>正确的</li>
+<li>可追溯性（向前和向后都可以追溯到以前／将来的工作）</li>
+<li>明确的</li>
+<li>可验证的（即可测试的）</li>
+<li>优先级（关于重要性和／或稳定性）</li>
+<li>完整的</li>
+<li>一致的</li>
+<li>唯一可识别（通常通过编号，如3.4.5.6)<br>你应注意仔细组织本节中提出的要求，以便易于访问和理解。此外，该 SRS 不是软件设计文档，因此应该避免在该 SRS 中过度约束（并因此设计）软件项目的倾向</li>
+</ul>
+<h2 id="3-1-对外接口需求"><a href="#3-1-对外接口需求" class="headerlink" title="3.1.  对外接口需求"></a>3.1.  对外接口需求</h2><h3 id="3-1-1-用户界面"><a href="#3-1-1-用户界面" class="headerlink" title="3.1.1. 用户界面"></a>3.1.1. 用户界面</h3><h3 id="3-1-2-硬件接口"><a href="#3-1-2-硬件接口" class="headerlink" title="3.1.2. 硬件接口"></a>3.1.2. 硬件接口</h3><h3 id="3-1-3-软件接口"><a href="#3-1-3-软件接口" class="headerlink" title="3.1.3. 软件接口"></a>3.1.3. 软件接口</h3><h3 id="3-1-4-通信接口"><a href="#3-1-4-通信接口" class="headerlink" title="3.1.4. 通信接口"></a>3.1.4. 通信接口</h3><h2 id="3-2-功能需求"><a href="#3-2-功能需求" class="headerlink" title="3.2.  功能需求"></a>3.2.  功能需求</h2><p>介绍软件项目的具体特性。如果需要，一些需求可以用用例格式指定，并在用例部分中列出。</p>
+<h3 id="3-2-1-功能需求或特性-1"><a href="#3-2-1-功能需求或特性-1" class="headerlink" title="3.2.1.  功能需求或特性 #1"></a>3.2.1.  功能需求或特性 #1</h3><h4 id="3-2-1-1介绍"><a href="#3-2-1-1介绍" class="headerlink" title="3.2.1.1介绍"></a>3.2.1.1介绍</h4><h4 id="3-2-1-2输入"><a href="#3-2-1-2输入" class="headerlink" title="3.2.1.2输入"></a>3.2.1.2输入</h4><h4 id="3-2-1-3处理"><a href="#3-2-1-3处理" class="headerlink" title="3.2.1.3处理"></a>3.2.1.3处理</h4><h4 id="3-2-1-4输出"><a href="#3-2-1-4输出" class="headerlink" title="3.2.1.4输出"></a>3.2.1.4输出</h4><h4 id="3-2-1-5错误处理"><a href="#3-2-1-5错误处理" class="headerlink" title="3.2.1.5错误处理"></a>3.2.1.5错误处理</h4><h3 id="3-2-2-功能需求或特性-2"><a href="#3-2-2-功能需求或特性-2" class="headerlink" title="3.2.2.  功能需求或特性 #2"></a>3.2.2.  功能需求或特性 #2</h3><h2 id="3-3-用例"><a href="#3-3-用例" class="headerlink" title="3.3.  用例"></a>3.3.  用例</h2><h3 id="3-3-1-用例-1"><a href="#3-3-1-用例-1" class="headerlink" title="3.3.1.  用例 #1"></a>3.3.1.  用例 #1</h3><h3 id="3-3-2-用例-2"><a href="#3-3-2-用例-2" class="headerlink" title="3.3.2.  用例 #2"></a>3.3.2.  用例 #2</h3><h2 id="3-4-类-x2F-对象"><a href="#3-4-类-x2F-对象" class="headerlink" title="3.4.  类&#x2F;对象"></a>3.4.  类&#x2F;对象</h2><h3 id="3-4-1-类-x2F-对象-1"><a href="#3-4-1-类-x2F-对象-1" class="headerlink" title="3.4.1.  类&#x2F;对象 #1"></a>3.4.1.  类&#x2F;对象 #1</h3><h4 id="3-4-1-1属性"><a href="#3-4-1-1属性" class="headerlink" title="3.4.1.1属性"></a>3.4.1.1属性</h4><h4 id="3-4-1-2功能"><a href="#3-4-1-2功能" class="headerlink" title="3.4.1.2功能"></a>3.4.1.2功能</h4><p>＜对功能需求和／或用例的引用＞</p>
+<h3 id="3-4-2-类-x2F-对象-2"><a href="#3-4-2-类-x2F-对象-2" class="headerlink" title="3.4.2.  类&#x2F;对象 #2"></a>3.4.2.  类&#x2F;对象 #2</h3><h2 id="3-5-非功能需求"><a href="#3-5-非功能需求" class="headerlink" title="3.5.  非功能需求"></a>3.5.  非功能需求</h2><p>以下属性可能存在非功能性需求。通常，这些需求必须在系统级而不是在单元级上实现。以可测量的术语在以下章节中说明要求（例如，95％的事务应在一秒钟内处理，系统停机时间每天不得超过1分钟，&gt;30天MTBF值等）</p>
+<h3 id="3-5-1-性能"><a href="#3-5-1-性能" class="headerlink" title="3.5.1.  性能"></a>3.5.1.  性能</h3><h3 id="3-5-2-可靠性"><a href="#3-5-2-可靠性" class="headerlink" title="3.5.2.  可靠性"></a>3.5.2.  可靠性</h3><h3 id="3-5-3-可用性"><a href="#3-5-3-可用性" class="headerlink" title="3.5.3.  可用性"></a>3.5.3.  可用性</h3><h3 id="3-5-4-安全"><a href="#3-5-4-安全" class="headerlink" title="3.5.4.  安全"></a>3.5.4.  安全</h3><h3 id="3-5-5-可维护性"><a href="#3-5-5-可维护性" class="headerlink" title="3.5.5.  可维护性"></a>3.5.5.  可维护性</h3><h3 id="3-5-6-可移植性"><a href="#3-5-6-可移植性" class="headerlink" title="3.5.6.  可移植性"></a>3.5.6.  可移植性</h3><h2 id="3-6-反向需求"><a href="#3-6-反向需求" class="headerlink" title="3.6.  反向需求"></a>3.6.  反向需求</h2><p>陈述任何有用的反向需求。</p>
+<h2 id="3-7-设计约束"><a href="#3-7-设计约束" class="headerlink" title="3.7.  设计约束"></a>3.7.  设计约束</h2><p>指定将影响此软件项目的其他标准、公司政策、硬件限制等强加的设计约束。</p>
+<h2 id="3-8-数据库逻辑要求"><a href="#3-8-数据库逻辑要求" class="headerlink" title="3.8.  数据库逻辑要求"></a>3.8.  数据库逻辑要求</h2><p>会使用数据库吗？如果是这样，那么对于数据格式、存储功能、数据保留、数据完整性等存在哪些逻辑需求？</p>
+<h2 id="3-9-其他要求"><a href="#3-9-其他要求" class="headerlink" title="3.9.  其他要求"></a>3.9.  其他要求</h2><p>捕获所有部分的任何附加要求。</p>
+<h1 id="4-分析模型"><a href="#4-分析模型" class="headerlink" title="4.  分析模型"></a>4.  分析模型</h1><p>列出所有用于开发本SRS中先前给出的特定需求的分析模型。每个模型都应该包括一个介绍和一个叙述性的描述。此外，对于SRS的需求，每个模型都应该是可跟踪的。</p>
+<h2 id="4-1-时序图"><a href="#4-1-时序图" class="headerlink" title="4.1.  时序图"></a>4.1.  时序图</h2><h2 id="4-2-数据流程图（DFD"><a href="#4-2-数据流程图（DFD" class="headerlink" title="4.2.  数据流程图（DFD)"></a>4.2.  数据流程图（DFD)</h2><h2 id="4-3-状态转换图（STD）"><a href="#4-3-状态转换图（STD）" class="headerlink" title="4.3.  状态转换图（STD）"></a>4.3.  状态转换图（STD）</h2><h1 id="5-变更管理流程"><a href="#5-变更管理流程" class="headerlink" title="5.  变更管理流程"></a>5.  变更管理流程</h1><p>确定和描述将用于更新SRS的过程，根据需要，当项目范围或需求发生变化时。谁可以提交变更，通过什么方式提交，这些变更将如何获得批准？</p>
+<h1 id="A-附录"><a href="#A-附录" class="headerlink" title="A.  附录"></a>A.  附录</h1><p>附录可以用来提供额外的（希望是有用的）信息。如果存在，SRS应明确说明附录中包含的信息是否应被视为SRS总体要求的一部分。</p>
+<p>示例附录可以包括软件项目的（初始）概念性文档、营销材料、与客户的会议记录等。</p>
+<h2 id="A-1-附录1"><a href="#A-1-附录1" class="headerlink" title="A.1.  附录1"></a>A.1.  附录1</h2><h2 id="A-1-附录2"><a href="#A-1-附录2" class="headerlink" title="A.1.  附录2"></a>A.1.  附录2</h2></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://sujucu.github.io">摸凹猫</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://sujucu.github.io/2023/12/09/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/">https://sujucu.github.io/2023/12/09/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://sujucu.github.io" target="_blank">摸凹猫的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://tse4-mm.cn.bing.net/th/id/OIP-C.SSmOBS2-3G7Ka06fYK0I8QAAAA?w=144&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.3&amp;pid=1.7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2023/12/05/Simulate-Writing-Memo/" title="Simulate Writing:Memo"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Simulate Writing:Memo</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.SSmOBS2-3G7Ka06fYK0I8QAAAA?w=144&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.3&amp;pid=1.7" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">摸凹猫</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">1.  介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E7%BC%96%E5%86%99%E7%9B%AE%E7%9A%84"><span class="toc-number">1.1.</span> <span class="toc-text">1.1.  编写目的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E6%96%87%E6%A1%A3%E8%8C%83%E5%9B%B4"><span class="toc-number">1.2.</span> <span class="toc-text">1.2.  文档范围</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E6%9C%AF%E8%AF%AD%E4%B8%8E%E7%BC%A9%E5%86%99%E8%A7%A3%E9%87%8A"><span class="toc-number">1.3.</span> <span class="toc-text">1.3.  术语与缩写解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">1.4.</span> <span class="toc-text">1.4.  参考资料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-5-%E6%A6%82%E8%BF%B0"><span class="toc-number">1.5.</span> <span class="toc-text">1.5.  概述</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%A6%82%E8%A6%81"><span class="toc-number">2.</span> <span class="toc-text">2. 概要</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E4%BA%A7%E5%93%81%E8%A7%86%E8%A7%92"><span class="toc-number">2.1.</span> <span class="toc-text">2.1.  产品视角</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E4%BA%A7%E5%93%81%E5%8A%9F%E8%83%BD"><span class="toc-number">2.2.</span> <span class="toc-text">2.2.  产品功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E7%94%A8%E6%88%B7%E7%89%B9%E5%BE%81"><span class="toc-number">2.3.</span> <span class="toc-text">2.3.  用户特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E4%B8%80%E8%88%AC%E7%BA%A6%E6%9D%9F"><span class="toc-number">2.4.</span> <span class="toc-text">2.4.  一般约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-%E5%81%87%E8%AE%BE%E4%B8%8E%E4%BE%9D%E8%B5%96"><span class="toc-number">2.5.</span> <span class="toc-text">2.5.  假设与依赖</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E5%85%B7%E4%BD%93%E8%A6%81%E6%B1%82"><span class="toc-number">3.</span> <span class="toc-text">3.  具体要求</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E5%AF%B9%E5%A4%96%E6%8E%A5%E5%8F%A3%E9%9C%80%E6%B1%82"><span class="toc-number">3.1.</span> <span class="toc-text">3.1.  对外接口需求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-1-%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2"><span class="toc-number">3.1.1.</span> <span class="toc-text">3.1.1. 用户界面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-2-%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3"><span class="toc-number">3.1.2.</span> <span class="toc-text">3.1.2. 硬件接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-3-%E8%BD%AF%E4%BB%B6%E6%8E%A5%E5%8F%A3"><span class="toc-number">3.1.3.</span> <span class="toc-text">3.1.3. 软件接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-4-%E9%80%9A%E4%BF%A1%E6%8E%A5%E5%8F%A3"><span class="toc-number">3.1.4.</span> <span class="toc-text">3.1.4. 通信接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-number">3.2.</span> <span class="toc-text">3.2.  功能需求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-1-%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E6%88%96%E7%89%B9%E6%80%A7-1"><span class="toc-number">3.2.1.</span> <span class="toc-text">3.2.1.  功能需求或特性 #1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-1%E4%BB%8B%E7%BB%8D"><span class="toc-number">3.2.1.1.</span> <span class="toc-text">3.2.1.1介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-2%E8%BE%93%E5%85%A5"><span class="toc-number">3.2.1.2.</span> <span class="toc-text">3.2.1.2输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-3%E5%A4%84%E7%90%86"><span class="toc-number">3.2.1.3.</span> <span class="toc-text">3.2.1.3处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-4%E8%BE%93%E5%87%BA"><span class="toc-number">3.2.1.4.</span> <span class="toc-text">3.2.1.4输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-5%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="toc-number">3.2.1.5.</span> <span class="toc-text">3.2.1.5错误处理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-2-%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E6%88%96%E7%89%B9%E6%80%A7-2"><span class="toc-number">3.2.2.</span> <span class="toc-text">3.2.2.  功能需求或特性 #2</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E7%94%A8%E4%BE%8B"><span class="toc-number">3.3.</span> <span class="toc-text">3.3.  用例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-1-%E7%94%A8%E4%BE%8B-1"><span class="toc-number">3.3.1.</span> <span class="toc-text">3.3.1.  用例 #1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-2-%E7%94%A8%E4%BE%8B-2"><span class="toc-number">3.3.2.</span> <span class="toc-text">3.3.2.  用例 #2</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E7%B1%BB-x2F-%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.4.</span> <span class="toc-text">3.4.  类&#x2F;对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-1-%E7%B1%BB-x2F-%E5%AF%B9%E8%B1%A1-1"><span class="toc-number">3.4.1.</span> <span class="toc-text">3.4.1.  类&#x2F;对象 #1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-1-1%E5%B1%9E%E6%80%A7"><span class="toc-number">3.4.1.1.</span> <span class="toc-text">3.4.1.1属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-1-2%E5%8A%9F%E8%83%BD"><span class="toc-number">3.4.1.2.</span> <span class="toc-text">3.4.1.2功能</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-2-%E7%B1%BB-x2F-%E5%AF%B9%E8%B1%A1-2"><span class="toc-number">3.4.2.</span> <span class="toc-text">3.4.2.  类&#x2F;对象 #2</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E9%9D%9E%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-number">3.5.</span> <span class="toc-text">3.5.  非功能需求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-1-%E6%80%A7%E8%83%BD"><span class="toc-number">3.5.1.</span> <span class="toc-text">3.5.1.  性能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-2-%E5%8F%AF%E9%9D%A0%E6%80%A7"><span class="toc-number">3.5.2.</span> <span class="toc-text">3.5.2.  可靠性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-3-%E5%8F%AF%E7%94%A8%E6%80%A7"><span class="toc-number">3.5.3.</span> <span class="toc-text">3.5.3.  可用性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-4-%E5%AE%89%E5%85%A8"><span class="toc-number">3.5.4.</span> <span class="toc-text">3.5.4.  安全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-5-%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7"><span class="toc-number">3.5.5.</span> <span class="toc-text">3.5.5.  可维护性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-6-%E5%8F%AF%E7%A7%BB%E6%A4%8D%E6%80%A7"><span class="toc-number">3.5.6.</span> <span class="toc-text">3.5.6.  可移植性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6-%E5%8F%8D%E5%90%91%E9%9C%80%E6%B1%82"><span class="toc-number">3.6.</span> <span class="toc-text">3.6.  反向需求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7-%E8%AE%BE%E8%AE%A1%E7%BA%A6%E6%9D%9F"><span class="toc-number">3.7.</span> <span class="toc-text">3.7.  设计约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-8-%E6%95%B0%E6%8D%AE%E5%BA%93%E9%80%BB%E8%BE%91%E8%A6%81%E6%B1%82"><span class="toc-number">3.8.</span> <span class="toc-text">3.8.  数据库逻辑要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-9-%E5%85%B6%E4%BB%96%E8%A6%81%E6%B1%82"><span class="toc-number">3.9.</span> <span class="toc-text">3.9.  其他要求</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E5%88%86%E6%9E%90%E6%A8%A1%E5%9E%8B"><span class="toc-number">4.</span> <span class="toc-text">4.  分析模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E6%97%B6%E5%BA%8F%E5%9B%BE"><span class="toc-number">4.1.</span> <span class="toc-text">4.1.  时序图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%9B%BE%EF%BC%88DFD"><span class="toc-number">4.2.</span> <span class="toc-text">4.2.  数据流程图（DFD)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%9B%BE%EF%BC%88STD%EF%BC%89"><span class="toc-number">4.3.</span> <span class="toc-text">4.3.  状态转换图（STD）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E5%8F%98%E6%9B%B4%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B"><span class="toc-number">5.</span> <span class="toc-text">5.  变更管理流程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#A-%E9%99%84%E5%BD%95"><span class="toc-number">6.</span> <span class="toc-text">A.  附录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#A-1-%E9%99%84%E5%BD%951"><span class="toc-number">6.1.</span> <span class="toc-text">A.1.  附录1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#A-1-%E9%99%84%E5%BD%952"><span class="toc-number">6.2.</span> <span class="toc-text">A.1.  附录2</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/09/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E8%A7%84%E6%A0%BC%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3/" title="需求分析规格说明文档">需求分析规格说明文档</a><time datetime="2023-12-08T23:05:14.000Z" title="发表于 2023-12-09 07:05:14">2023-12-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/05/Simulate-Writing-Memo/" title="Simulate Writing:Memo">Simulate Writing:Memo</a><time datetime="2023-12-04T22:01:18.000Z" title="发表于 2023-12-05 06:01:18">2023-12-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/11/09/%E5%A6%82%E4%BD%95%E8%AE%A9%E9%A1%B5%E9%9D%A2%E5%8F%98%E7%81%B0/" title="如何让页面变灰">如何让页面变灰</a><time datetime="2023-11-08T23:00:12.000Z" title="发表于 2023-11-09 07:00:12">2023-11-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/22/%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/" title="常用的软件测试工具">常用的软件测试工具</a><time datetime="2023-04-22T11:03:18.000Z" title="发表于 2023-04-22 19:03:18">2023-04-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/04/21/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" title="负载均衡">负载均衡</a><time datetime="2023-04-21T10:39:24.000Z" title="发表于 2023-04-21 18:39:24">2023-04-21</time></div></div></div></div></div></div></main><footer id="footer" style="background: pink"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 摸凹猫</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
